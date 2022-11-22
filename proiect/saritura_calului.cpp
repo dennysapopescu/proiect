@@ -30,3 +30,18 @@ bool plin()
 				return false;
 	return true;
 }
+
+void afisare()
+{
+	int i, j;
+	int nr_sol = 1;
+	cout << "solutia cu numarul " << nr_sol << "\n";
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < n; j++)
+			cout << matr[i][j] << "\t";
+		cout << endl;
+	}
+	nr_sol++;
+	cout << "\n\n\n";
+}
