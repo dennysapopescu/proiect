@@ -80,3 +80,11 @@ void back(int l, int c)
 
 	}
 }
+
+int main()
+{
+	citire();
+	cout << endl;
+	back(linie_init, coloana_init);
+	return 0;
+}
