@@ -57,3 +57,26 @@ void afisare()
 	cout << "\n\n\n";
 }
 
+void back(int l, int c)
+{
+	int i, vi, vj; //vecin i, vecin j
+	int k = 2;
+	if (plin())
+	{
+		afisare();
+		return;
+	}
+	for (i = 0; i < 8; i++)
+	{
+		vi = l + dl[i];
+		vj = c + dc[i];
+		if (ok(vi, vj))
+		{
+			matr[vi][vj] = k++;
+			back(vi, vj);
+			matr[vi][vj] = 0;
+			k--;
+		}
+
+	}
+}
