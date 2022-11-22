@@ -20,3 +20,13 @@ void citire()
 	//initializare matrice
 	matr[linie_init][coloana_init] = 0;
 }
+
+bool plin()
+{
+	int i, j;
+	for (i = 0; i < n; i++)
+		for (j = 0; j < n; j++)
+			if (matr[i][j] == 0)
+				return false;
+	return true;
+}
