@@ -31,6 +31,17 @@ bool plin()
 	return true;
 }
 
+bool ok(int i, int j)
+{
+	if (i < 0 || i > n - 1)
+		return false;
+	if (j < 0 || j > n - 1)
+		return false;
+	if (matr[i][j])
+		return false;
+	return true;
+}
+
 void afisare()
 {
 	int i, j;
@@ -45,3 +56,4 @@ void afisare()
 	nr_sol++;
 	cout << "\n\n\n";
 }
+
